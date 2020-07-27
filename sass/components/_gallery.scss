@@ -1,0 +1,119 @@
+.visually-hidden{
+ position: absolute;
+ width: 1px;
+ height: 1px;
+ margin: -1px;
+ border: 0;
+ padding: 0;
+ clip: rect(0 0 0 0);
+ overflow: hidden;
+}
+  
+.gallery{
+ display: flex;
+ flex-wrap: wrap;
+
+   & .item{
+    width: 370px;
+    margin-bottom: 30px;
+
+    &:not(:nth-child(3n)){
+        margin-right: 30px;
+    }
+         
+    &:nth-last-child(-n+3){
+        margin-bottom: 0px;
+    }
+   }
+}
+  
+.card{
+ background-color: $primary-background-color;
+ box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+  
+.product-card-link{
+ display: block;
+ padding-bottom: 20px;
+}
+
+.section-paragraph,
+.section-profession,
+.section-customer{
+ color: $secondary-text-color;
+}
+
+.section-customer{
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 1.58;
+ padding-left: 24px;
+}
+    
+      
+.section-name{
+ font-weight: 700;
+ font-size: 18px;
+ line-height: 2;
+ letter-spacing: 0.06em;
+ color: #212121;
+ padding-left: 24px;
+}
+  
+.section-name{
+ margin-top: 0px;
+ margin-bottom: 4px;
+ text-align: left;
+}
+  
+.section-customer{
+ margin-top: 0px;
+ text-align: left;
+}
+  
+.product-card{
+ position: relative;
+ overflow: hidden;
+}
+  
+.section-paragraph{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: left;
+ padding-left: 24px;
+ padding-right: 24px;
+ padding-top: 71px;
+ padding-bottom: 55px;
+ width: 370px;
+ height: 295px;
+ font-weight: 400;
+ font-size: 18px;
+ line-height: 1.55;
+ letter-spacing: 0.03em;
+ position: absolute;
+ top: 0;
+ right: 0;
+ color: #FFFFFF; 
+ font-family: Roboto;
+ font-weight: 400;
+ font-size: 18px;
+ line-height: 1.5;
+ background-color:rgba(33, 150, 243, 0.9); 
+ margin-top: 0px;
+ margin-bottom: 0px;
+ transform: translateY(101%);
+ transition: transform 250ms $timing-function;
+}
+  
+.card > a:hover .product-card > p{
+ transform: translateY(0%);
+}
+  
+.card > a:focus .product-card > p{
+ transform: translateY(0%);
+}
+  
+.gallery-content{
+ padding-top: 34px;
+}

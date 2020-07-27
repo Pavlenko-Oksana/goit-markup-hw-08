@@ -1,0 +1,36 @@
+.regular-customers-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border: 2px solid $customers-logo;
+    width: 170px;
+    height: 90px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: fill 250ms $timing-function, border-color 250ms $timing-function;
+
+    &:hover,
+    &:focus{
+      border-color: $accent-color;
+    }
+  }
+  
+  .regular-customers{
+    display: flex;
+  }
+  
+  .regular-logo:not(:last-child){
+    margin-right: 30px;
+  }
+  .customers-logo{
+    width: 170px;
+    height: 190px;
+    fill: $customers-logo;
+    border: 2px;
+
+    .regular-customers-logo:hover &, 
+    .regular-customers-logo:focus &{
+      fill: $accent-color;
+    }
+  }
