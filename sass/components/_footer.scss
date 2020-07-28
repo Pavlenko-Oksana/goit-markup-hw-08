@@ -3,7 +3,7 @@ footer{
 }
    
 .logo.footer{
- margin-top: 0px;
+ margin-top: 0;
  margin-bottom: 8px;
 }
    
@@ -13,7 +13,7 @@ footer{
    
 .address{
  color: $accent-color-white;
- font-family: Roboto;
+ font-family: $default-font;
  font-weight: 400;
  font-style: normal;
  font-size: 14px;
@@ -30,7 +30,6 @@ footer{
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  text-decoration: none;
 }
 
 .title-footer{

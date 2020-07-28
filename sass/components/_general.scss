@@ -7,8 +7,8 @@ body{
 }
      
 .list{
- padding: 0px;
- margin: 0px;
+ padding: 0;
+ margin: 0;
  list-style: none;
 }
     
@@ -23,6 +23,18 @@ a{
  margin-right: auto;
  padding-left: 15px;
  padding-right: 15px;
+
+ @media screen and (min-width: $phone){
+   width: 480px;
+ }
+
+ @media screen and (min-width: $tablet){
+   width: 768px;
+ }
+
+ @media screen and (min-width: $dekstop){
+   width: 1200px;
+ }
 }
 
 .section{
@@ -34,6 +46,6 @@ a{
 .title-serv,
 .title-regular-customers,
 .title-team{
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 50px;
 }

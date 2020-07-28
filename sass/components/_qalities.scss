@@ -11,7 +11,7 @@
     color: $primary-text-color;
     font-weight: 700;
     font-size: 14px;
-    left: 1.14;
+    line-height: 1.14;
     text-transform: uppercase;
   }
 
@@ -22,8 +22,8 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
     }
 
     .advantage-img-background{
@@ -36,9 +36,9 @@
       }
       
       .advantage{
-        width: calc((100%-30px*3)/4);
+        width: calc((100% - 30px * 3) / 4);
         margin-right: 30px;
-        margin-left: 0px;
+        margin-left: 0;
         justify-content: center;
         align-items: center;
       }

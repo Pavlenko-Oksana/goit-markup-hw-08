@@ -7,8 +7,8 @@ body {
 }
 
 .list {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -24,6 +24,24 @@ a {
   padding-right: 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .conainer {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .conainer {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .conainer {
+    width: 1200px;
+  }
+}
+
 .section {
   text-align: center;
   padding-top: 94px;
@@ -33,7 +51,7 @@ a {
 .title-serv,
 .title-regular-customers,
 .title-team {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 50px;
 }
 
@@ -56,6 +74,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header-border {
+  border: 1px solid #ECECEC;
 }
 
 .header-nav {
@@ -256,7 +278,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #757575;
-  padding-top: 0px;
+  padding-top: 0;
   text-align: center;
   padding-bottom: 200px;
 }
@@ -275,7 +297,7 @@ a {
   color: #212121;
   font-weight: 700;
   font-size: 14px;
-  left: 1.14;
+  line-height: 1.14;
   text-transform: uppercase;
 }
 
@@ -286,8 +308,8 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .advantage-img-background {
@@ -305,9 +327,9 @@ a {
 }
 
 .advantage {
-  width: calc((100%-30px*3)/4);
+  width: calc((100% - 30px * 3) / 4);
   margin-right: 30px;
-  margin-left: 0px;
+  margin-left: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -396,7 +418,7 @@ a {
 }
 
 .section-profession {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 16px;
 }
 
@@ -446,8 +468,8 @@ a {
       -ms-flex-align: center;
           align-items: center;
   fill: #AFB1B8;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -470,7 +492,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px;
+  padding: 0;
   border: 2px solid #AFB1B8;
   width: 170px;
   height: 90px;
@@ -512,7 +534,7 @@ footer {
 }
 
 .logo.footer {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 8px;
 }
 
@@ -522,7 +544,7 @@ footer {
 
 .address {
   color: #FFFFFF;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
@@ -539,7 +561,6 @@ footer {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  text-decoration: none;
 }
 
 .title-footer {
@@ -585,7 +606,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px;
+  padding: 0;
   border: none;
   height: 44px;
   width: 44px;
@@ -654,7 +675,7 @@ footer {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-right: 12px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -671,7 +692,7 @@ footer {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -857,7 +878,7 @@ footer {
   margin-left: 40px;
   margin-right: 40px;
   margin-bottom: 20px;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .comment {
