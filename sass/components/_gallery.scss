@@ -61,10 +61,7 @@
  letter-spacing: 0.06em;
  color: #212121;
  padding-left: 24px;
-}
-  
-.section-name{
- margin-top: 0;
+ margin-top: 20px;
  margin-bottom: 4px;
  text-align: left;
 }
@@ -72,6 +69,12 @@
 .product-card{
  position: relative;
  overflow: hidden;
+}
+
+.product-card-img{
+ display: block;
+ max-width: 100%;
+ height: auto;
 }
   
 .section-paragraph{
@@ -85,15 +88,12 @@
  padding-bottom: 55px;
  width: 370px;
  height: 295px;
- font-weight: 400;
- font-size: 18px;
- line-height: 1.55;
  letter-spacing: 0.03em;
  position: absolute;
  top: 0;
  right: 0;
  color: #FFFFFF; 
- font-family: Roboto;
+ font-family: "Roboto", sans-serif;
  font-weight: 400;
  font-size: 18px;
  line-height: 1.5;

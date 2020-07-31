@@ -16,7 +16,7 @@ a {
   text-decoration: none;
 }
 
-.conainer {
+.container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -25,19 +25,19 @@ a {
 }
 
 @media screen and (min-width: 480px) {
-  .conainer {
+  .container {
     width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .conainer {
+  .container {
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .conainer {
+  .container {
     width: 1200px;
   }
 }
@@ -67,32 +67,11 @@ a {
   color: #2196F3;
 }
 
-.main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .header-border {
   border: 1px solid #ECECEC;
 }
 
-.header-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: 85px;
 }
 
@@ -181,28 +160,10 @@ a {
 }
 
 .contacts-nav .header-mail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: #757575;
 }
 
 .contacts-nav .header-tel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: #757575;
 }
 
@@ -211,6 +172,20 @@ a {
 .header-tel:hover,
 .header-tel:focus {
   fill: #2196F3;
+}
+
+.header-menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.header-menu-button .icon-menu-close {
+  display: none;
 }
 
 .button {
@@ -324,10 +299,7 @@ a {
   letter-spacing: 0.06em;
   color: #212121;
   padding-left: 24px;
-}
-
-.section-name {
-  margin-top: 0;
+  margin-top: 20px;
   margin-bottom: 4px;
   text-align: left;
 }
@@ -335,6 +307,12 @@ a {
 .product-card {
   position: relative;
   overflow: hidden;
+}
+
+.product-card-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .section-paragraph {
@@ -354,15 +332,12 @@ a {
   padding-bottom: 55px;
   width: 370px;
   height: 295px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.55;
   letter-spacing: 0.03em;
   position: absolute;
   top: 0;
   right: 0;
   color: #FFFFFF;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
@@ -416,7 +391,7 @@ footer {
 
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
-  text-decoration: underline;
+  text-decoration: none;
   font-family: Roboto;
   font-weight: 400;
   font-style: normal;
@@ -427,12 +402,6 @@ footer {
 
 .title-footer {
   color: #FFFFFF;
-}
-
-.footer-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .footer-address {
@@ -492,23 +461,7 @@ footer {
   fill: #FFFFFF;
 }
 
-.mailind {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .form-mailind {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   padding-left: 94px;
   padding-bottom: 94px;
 }

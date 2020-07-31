@@ -1,9 +1,9 @@
 .about-team{
- display: flex;
+//  display: flex;
 
- .item:not(:first-child){
-  margin-left: 30px;
- }
+//  .item:not(:first-child){
+//   margin-left: 30px;
+//  }
 }
   
 .team-employee{
@@ -29,8 +29,8 @@
 }
    
 .team-icon{
-justify-content: center;
- align-items: center;
+//  justify-content: center;
+//  align-items: center;
  text-align: center;
  padding-left: 32px;
  padding-right: 32px;
@@ -54,9 +54,9 @@ justify-content: center;
 }
     
 .team-icon-link{
-display: flex;
-justify-content: center;
-align-items: center;
+// display: flex;
+// justify-content: center;
+// align-items: center;
 fill: $customers-logo;
 padding: 0;
 margin: 0;
