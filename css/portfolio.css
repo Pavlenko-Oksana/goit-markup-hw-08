@@ -188,6 +188,10 @@ a {
   display: none;
 }
 
+.header-menu-button .is-open .icon-menu-close {
+  display: block;
+}
+
 .button {
   color: #212121;
   background-color: #F5F4FA;

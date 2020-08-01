@@ -188,6 +188,10 @@ a {
   display: none;
 }
 
+.header-menu-button .is-open .icon-menu-close {
+  display: block;
+}
+
 .button-hero {
   display: inline-block;
   border-radius: 4px;
