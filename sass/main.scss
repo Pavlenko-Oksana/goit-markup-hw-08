@@ -1,9 +1,8 @@
 @import "./utils/variables";
 @import "./utils/breakpoints";
-@import "../js/menu.js";
-@import "../js/modal.js";
 @import "./components/general";
 @import "./components/header-logo";
+@import "./components/mobile-header";
 @import "./components/header-site-nav";
 @import "./components/hero";
 @import "./components/qalities";

@@ -9,19 +9,21 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <header>
+    <header class="page-header">
       <div  class="container main-nav">
-       
-      <nav class="header-nav">
-        <a href="#" class="logo" >
+        <div class="header-mobile">
+           <a href="#" class="logo" >
            <span class="accent">Web</span> Studio
         </a>
-        <button type="button" class="header-menu-button is-open">
+        <button type="button" class="header-menu-button is-open" aria-expanded="false" aria-control="header-menu-container" data-menu-button>
           <svg width="40px" height="40px" aria-label="Переключатель мабильного меню">
             <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
             <use class="icon-menu-close" href="./images/sprite.svg#icon-close-menu"></use>
           </svg>
         </button>
+       </div>
+     <div class="header-menu-container" id="header-menu-container" data-menu>
+      <nav class="header-nav">
         <ul class="site-nav list">
            <li class="item"><a href="./index.html" class="link current">Студия</a></li>
            <li class="item" ><a href="./portfolio.html" class="link">Портфолио</a></li>
@@ -42,6 +44,7 @@
             +38 096 111 11 11</a></li>
         </ul>
       </address>
+    </div>
     </div>
     </header>
 
@@ -389,5 +392,6 @@
       </div>
     </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 </html>

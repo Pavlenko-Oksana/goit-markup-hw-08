@@ -1,19 +1,27 @@
-// .main-nav{
-//   display: flex;
-//   align-items: center;
-// }
+
+.main-nav{
+  @media screen and (min-width: $tablet){
+   display: flex;
+   align-items: center;
+  }
+}
 
 .header-border{
   border: 1px solid #ECECEC;
 }
 
-// .header-nav{
-//   display: flex;
-//   align-items: center;
-// }
+.header-nav{
+  @media screen and (min-width: $tablet) {
+   display: flex;
+   align-items: center;
+  }
+}
 
 .site-nav{
-//  display: flex;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+ 
  margin-left: 85px;
 
   & .link{
@@ -62,8 +70,10 @@ background-color: $accent-color;
 }
 
 .contacts-nav{
-  display: flex;
-
+  @media screen and (min-width: $dekstop) {
+    display: flex;
+  }
+  
    .link{
     display: block;
     padding-top: 32px;
@@ -100,16 +110,21 @@ background-color: $accent-color;
 }
 
 .contacts-nav .header-mail{
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  @media screen and (min-width: $dekstop) {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
   color: $secondary-text-color;
 }
 
 .contacts-nav .header-tel{
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  @media screen and (min-width: $tablet) {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  
   color: $secondary-text-color;
 }
 
@@ -118,21 +133,5 @@ background-color: $accent-color;
 .header-tel:hover,
 .header-tel:focus{
   fill: $accent-color;
-}
-
-.header-menu-button{
-  display: inline-flex;
-  padding: 0;
-  margin: 0;
-  border: none;
-  background-color: transparent;
-
-  .icon-menu-close{
-    display: none;
-  }
-
-  .is-open .icon-menu-close{
-    display: block;
-  }
 }
 
