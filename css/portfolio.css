@@ -17,7 +17,7 @@ a {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -198,12 +198,20 @@ a {
   position: relative;
 }
 
+@media screen and (max-width: 767px) {
+  .site-nav .item {
+    text-align: center;
+  }
+}
+
 .site-nav .current {
   color: #2196F3;
 }
 
-.site-nav .item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .site-nav .item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .contacts-nav-icon {
@@ -219,6 +227,12 @@ a {
   border-radius: 2px;
   width: 100%;
   background-color: #2196F3;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-nav {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -253,6 +267,14 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-nav .item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .contacts-nav .item:not(:last-child) {
@@ -490,7 +512,7 @@ footer {
 
 .logo.footer {
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 
 .logo-footer {
@@ -520,16 +542,20 @@ footer {
 
 .title-footer {
   color: #FFFFFF;
+  text-align: center;
+}
+
+.footer-content {
+  height: 603px;
 }
 
 .footer-address {
-  margin-right: 69px;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  text-align: center;
+  padding-top: 60px;
 }
 
 .footer-links {
-  margin-top: 72px;
+  margin-top: 60px;
 }
 
 .footer-icon {
@@ -580,7 +606,6 @@ footer {
 }
 
 .form-mailind {
-  padding-left: 94px;
   padding-bottom: 94px;
 }
 
@@ -596,9 +621,10 @@ footer {
 
 .input-mailing {
   height: 50px;
-  width: 358px;
+  width: 450px;
   padding-left: 16px;
   padding-top: 16px;
+  padding-right: 16px;
   padding-bottom: 16px;
   background-color: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -648,7 +674,7 @@ footer {
 .icon-mailing {
   position: absolute;
   top: 13px;
-  right: 28px;
+  left: 148px;
   fill: #FFFFFF;
 }
 /*# sourceMappingURL=portfolio.css.map */

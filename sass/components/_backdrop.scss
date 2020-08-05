@@ -5,6 +5,8 @@
  width: 100%;
  height: 100%;
  background-color: rgba(0, 0, 0, 0.2); 
+ visibility: visible;
+ pointer-events: visible;
  opacity: 1;
  transition: opacity 250ms $timing-function;
 }

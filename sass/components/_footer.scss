@@ -4,7 +4,8 @@ footer{
    
 .logo.footer{
  margin-top: 0;
- margin-bottom: 8px;
+ margin-bottom: 20px;
+//  margin-bottom: 8px;
 }
    
 .logo-footer{
@@ -34,18 +35,23 @@ footer{
 
 .title-footer{
   color: $accent-color-white;
+  text-align: center;
 }
 
-// .footer-content{
-//  display: flex;
-// }
+.footer-content{
+  height: 603px;
+  // display: flex;
+}
   
 .footer-address{
- margin-right: 69px;
- margin-top: 60px;
- margin-bottom: 60px;
+//  margin-right: 69px;
+//  margin-top: 60px;
+//  margin-bottom: 60px;
+ text-align: center;
+ padding-top: 60px;
 }
   
 .footer-links{
- margin-top: 72px;
+  margin-top: 60px;
+ //margin-top: 72px;
 }
