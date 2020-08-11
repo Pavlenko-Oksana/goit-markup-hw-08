@@ -103,21 +103,27 @@
 
       <li class="item">
         <div class="services-img">
-        <img src="./images/img-business.jpg" alt="Ноутбук" class="services-image">
+        <img srcset="./images/img-business.jpg, ./images/img-business-2x.jpg 2x"
+        src="./images/img-business.jpg" 
+        alt="Ноутбук" class="services-image"  width="370">
         <a href="#" class="section-services">Десктопные приложения</a>
        </div>
       </li>
 
       <li class="item">
         <div class="services-img">
-        <img src="./images/box.jpg" alt="Мобильный телефон" class="services-image">
+        <img srcset="./images/box.jpg, ./images/box2x.jpg 2x"
+        src="./images/box.jpg"
+        alt="Мобильный телефон" class="services-image" width="370">
         <a href="#" class="section-services">Мобильные приложения</a>
         </div>
       </li>
 
       <li class="item">
         <div class="services-img">
-        <img src="./images/img-insp.jpg" alt="Компьютер" class="services-image">
+        <img srcset="./images/img-insp.jpg, ./images/img-insp-2x.jpg 2x"
+         src="./images/img-insp.jpg" 
+         alt="Компьютер" class="services-image" width="370">
         <a href="#" class="section-services">Дизайнерские решения</a>
       </div>
       </li>
@@ -132,9 +138,10 @@
        <ul class="about-team list">
         <li class="item team-employee">
           <picture>
-            <source srcset="./images/team/img.jpg, ./images/team/img-2x.jpg 2x" media="(max-width: 480px)" />
-            <!-- <source srcset="./images/team/img480.jpg, ./images/team/img480-2x.jpg 2x" media="(max-width: 768px)" /> -->
-          <img src="./images/team/img.jpg" 
+            <source srcset="./images/team/img480.jpg, ./images/team/img480-2x.jpg 2x" media="(min-width: 480px)" />
+            <source srcset="./images/team/img768.jpg, ./images/team/img768-2x.jpg 2x" media="(min-width: 768px)" />
+            <source srcset="./images/team/img.jpg, ./images/team/img2x.jpg 2x" media="(min-width: 1200px)" />
+            <img src="./images/team/img.jpg" 
             alt="Николай Кучеренко" />  
         </picture>
          <h3 class="team-name">Николай Кучеренко</h3>
@@ -163,10 +170,15 @@
          </ul>
         </li>
         <li class="item team-employee">
-            <img srcset="./images/team/img1.jpg, ./images/team/img1-2x.jpg 2x"
-            src="./images/team/img1.jpg"
-            alt="Ольга Иванова"/>
-            <h3 class="team-name">Ольга Иванова</h3>
+          <picture>
+            <source srcset="./images/team/img1-480.jpg, ./images/team/img1-480-2x.jpg 2x" media="(min-width: 480px)" />
+            <source srcset="./images/team/img1-768.jpg, ./images/team/img1-768-2x.jpg 2x" media="(min-width: 768px)" />
+            <source srcset="./images/team/img1.jpg, ./images/team/img1-2x.jpg 2x" media="(min-width: 1200px)" />
+           <img src="./images/team/img1.jpg" 
+            alt="Ольга Иванова" />  
+        </picture>
+           
+             <h3 class="team-name">Ольга Иванова</h3>
             <p class="section-profession">Frontend Developer</p>
             <ul class="list team-icon">
               <li class="team-icon-img"><a href="#" class="team-icon-link">
@@ -192,9 +204,14 @@
             </ul>
            </li>
          <li class="item team-employee">
-            <img srcset="./images/team/img2.jpg, ./images/team/img2-2x.jpg 2x"
-            src="./images/team/img2.jpg" 
-            alt="Андрей Шевченко"/>
+          <picture>
+            <source srcset="./images/team/img2-480.jpg, ./images/team/img2-480-2x.jpg 2x" media="(min-width: 480px)" />
+            <source srcset="./images/team/img2-768.jpg, ./images/team/img2-768-2x.jpg 2x" media="(min-width: 768px)" />
+            <source srcset="./images/team/img2.jpg, ./images/team/img2-2x.jpg 2x" media="(min-width: 1200px)" />
+           <img src="./images/team/img2.jpg" 
+           alt="Андрей Шевченко" />  
+        </picture>
+            
             <h3 class="team-name">Андрей Шевченко</h3>
             <p class="section-profession">Marketing</p>
             <ul class="list team-icon">
@@ -221,9 +238,14 @@
             </ul>
           </li>
           <li class="item team-employee">
-            <img srcset="./images/team/img3.jpg, ./images/team/img3-2x.jpg 2x"
-            src="./images/team/img3.jpg" 
-            alt="Иван Николаев"/>
+            <picture>
+              <source srcset="./images/team/img3-480.jpg, ./images/team/img3-480-2x.jpg 2x" media="(min-width: 480px)" />
+              <source srcset="./images/team/img3-768.jpg, ./images/team/img3-768-2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/team/img3.jpg, ./images/team/img3-2x.jpg 2x" media="(min-width: 1200px)" />
+             <img src="./images/team/img3.jpg" 
+             alt="Иван Николаев" />  
+          </picture>
+                      
             <h3 class="team-name">Иван Николаев</h3>
             <p class="section-profession">UI Designer</p>
             <ul class="list team-icon">
