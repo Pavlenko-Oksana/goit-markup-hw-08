@@ -2,74 +2,73 @@
 //  display: flex;
 //  flex-direction: column;
 // }
-  
-.form-mailind{
-//  display: flex;
-//  align-items: flex-end;
-// padding-left: 94px;
- padding-bottom: 94px;
+
+.form-mailind {
+  //  display: flex;
+  //  align-items: flex-end;
+  // padding-left: 94px;
+  padding-bottom: 94px;
 }
-  
-.lable-mailing{
- font-weight: 900;
- font-size: 14px;
- line-height: 1.14;
- letter-spacing: 0.03em;
- text-transform: uppercase;
- color: $accent-color-white;
- margin-bottom: 20px;
+
+.lable-mailing {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $accent-color-white;
+  margin-bottom: 20px;
 }
-  
-.input-mailing{
- height: 50px;
- width: 450px;
- padding-left: 16px;
- padding-top: 16px;
- padding-right: 16px;
- padding-bottom: 16px;
- background-color: $footer-background-color;
- border: 1px solid rgba(255, 255, 255, 0.3);
- box-sizing: border-box;
- box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
- border-radius: 4px;
- margin-right: 12px;
- font-family: $default-font;
- font-weight: 400;
- font-size: 16px;
- line-height: 1.25;
- color: rgba(255, 255, 255, 0.6);
+
+.input-mailing {
+  height: 50px;
+  width: 100%;
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  background-color: $footer-background-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-right: 12px;
+  font-family: $default-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
 }
-  
-.button-mailing{
- height: 50px;
- width: 200px;
- background: #2196F3;
- box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
- border-radius: 4px;
- padding-top: 10px;
- padding-bottom: 10px;
- padding-left: 29px;
- font-family: $default-font;
- font-weight: 700;
- font-size: 16px;
- line-height: 1.87;
- display: flex;
- align-items: center;
- text-align: center;
- letter-spacing: 0.06em;
- color: $accent-color-white;
- border-color: transparent;
+
+.button-mailing {
+  height: 50px;
+  width: 200px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  font-family: $default-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $accent-color-white;
+  border-color: transparent;
 }
-  
-.button-mailing-container{
- position: relative;
+
+.button-mailing-container {
+  position: relative;
 }
-  
-.icon-mailing{
- position: absolute;
- top: 13px;
-//  right: 28px;
- left: 148px;
- fill: $accent-color-white;
+
+.icon-mailing {
+  position: absolute;
+  top: 13px;
+  //  right: 28px;
+  left: 148px;
+  fill: $accent-color-white;
 }
-  

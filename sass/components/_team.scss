@@ -5,70 +5,86 @@
 //   margin-left: 30px;
 //  }
 // }
-  
-.team-employee{
- height: 422px;
- width: 270px;
- background-color: $primary-background-color;
- box-shadow:  0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);;
- border-radius:  0px 0px 4px 4px;
-}
-  
-  .team-name{
- margin-top: 30px;
- margin-bottom: 10px;
+
+.team-employee {
+  height: 482px;
+  width: 100%;
+  background-color: $primary-background-color;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: $tablet) {
+    height: 422px;
+  }
 }
 
-.section-profession{
- margin-top: 0;
- margin-bottom: 16px;
+.team-employee:not(:last-child) {
+  @media screen and (max-width: 479px) {
+    margin-bottom: 30px;
+  }
 }
 
-.team{
- background-color: $secondary-background-color;
-}
-   
-.team-icon{
-//  justify-content: center;
-//  align-items: center;
- text-align: center;
- padding-left: 32px;
- padding-right: 32px;
- display: flex;
-} 
-    
-.team-icon-img{
- height: 44px;
- width: 44px;
-
-  &:not(:last-child){
-  margin-right: 10px;
- }
+.team-photo {
+  width: 100%;
+  height: 320px;
 }
 
-.team-icon-image{
- height: 20px;
- width: 20px;
- margin-top: 24px;
- margin-bottom: 24px;
+.team-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
-    
-.team-icon-link{
-// display: flex;
-// justify-content: center;
-// align-items: center;
-fill: $customers-logo;
-padding: 0;
-margin: 0;
-width: 44px;
-height: 44px;
-border-radius: 50%; 
-transition: background-color 250ms $timing-function, fill 250ms $timing-function;
 
-&:hover,
-&:focus{
-background-color: $accent-color;
-fill: $accent-color-white;
+.section-profession {
+  margin-top: 0;
+  margin-bottom: 16px;
 }
+
+.team {
+  background-color: $secondary-background-color;
 }
-    
+
+.team-icon {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  display: flex;
+}
+
+.team-icon-img {
+  height: 44px;
+  width: 44px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.team-icon-image {
+  height: 20px;
+  width: 20px;
+  // margin-top: 24px;
+  //margin-bottom: 24px;
+}
+
+.team-icon-link {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  fill: $customers-logo;
+  padding: 0;
+  margin: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color 250ms $timing-function,
+    fill 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: $accent-color-white;
+  }
+}

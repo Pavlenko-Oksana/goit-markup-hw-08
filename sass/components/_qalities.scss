@@ -1,59 +1,62 @@
-  // .qualities{
-  //   display: flex;
-  // }
-  
-  .qualities-name{
-    // width: 270px;
-    // text-align: left;
-    // margin-bottom: 10px;
-    // margin-top: 30px;
-    
-    color: $primary-text-color;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
+// .qualities {
+//   display: flex;
+// }
 
-    @media screen and (min-width: $tablet){
-      width: 50%;
-    }
+.qualities-name {
+  // width: 270px;
+
+  margin-bottom: 10px;
+  margin-top: 30px;
+
+  color: $primary-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    width: 50%;
+    text-align: left;
+  }
+}
+
+.paragraph {
+  width: 100%;
+  text-align: left;
+  color: $secondary-text-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.advantage-img-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary-background-color;
+  height: 120px;
+}
+
+.advantage {
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
   }
 
-  .paragraph{
-    width: 270px;
-    text-align: left;
-    color: $secondary-text-color;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    margin-top: 0;
-    margin-bottom: 0;
-    }
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+    align-items: center;
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-left: 0;
+  }
 
-    .advantage-img-background{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $secondary-background-color;
-        height: 120px;
-       
-      }
-      
-      .advantage{
-        width: 100%;
-
-        @media screen and (min-width: $tablet){
-          justify-content: center;
-          align-items: center;
-          width: calc((100% - 30px)  / 2) ;
-          margin-right: 30px;
-          margin-left: 0;
-        } 
-
-        @media screen and (min-width: $dekstop) {
-        width: calc((100% - 30px * 3) / 4);
-        margin-right: 30px;
-        margin-left: 0;
-        
-       }
-      }
+  @media screen and (min-width: $dekstop) {
+    width: calc((100% - 30px * 3) / 4);
+    margin-right: 30px;
+    margin-left: 0;
+  }
+}
